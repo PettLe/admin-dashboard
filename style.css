@@ -60,6 +60,18 @@
   background-color: white;
   width: 500px;
 }
+
+.announcements,
+.trending {
+  display: grid;
+}
+
+.trendingcard,
+.anncard {
+  display: grid;
+  width: 1fr;
+  background-color: white;
+}
 button {
   color: white;
   background-color: #1992d4;
