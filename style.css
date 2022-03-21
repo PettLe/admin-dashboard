@@ -7,6 +7,11 @@
 li {
   font-size: x-large;
   font-weight: 600;
+  margin: 15px 0px 5px 0px;
+}
+
+ul {
+  text-align: left;
 }
 
 .container {
@@ -24,6 +29,15 @@ li {
   background-color: #1992d4;
   grid-row: 1 / 3;
   display: grid;
+}
+
+.sidebar img {
+  margin-right: 15px;
+}
+
+.logo img {
+  float: left;
+  margin-right: 0px !important;
 }
 
 .header {
