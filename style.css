@@ -102,6 +102,11 @@ ul {
 
 .cardicons {
   margin-left: auto;
+  margin-right: 25px;
+}
+
+.cardicons img {
+  margin-right: 15px;
 }
 
 .announcements,
