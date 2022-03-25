@@ -101,6 +101,7 @@ ul {
 
 .userpicsmall {
   display: flex;
+  color: black !important;
   justify-content: center;
   align-items: center;
   width: 60px;
@@ -148,7 +149,7 @@ ul {
 
 hr {
   width: 100%;
-  border-top: 1px solid grey;
+  border-top: 1px solid rgb(201, 201, 201);
   max-height: 0px;
 }
 
@@ -163,22 +164,54 @@ hr {
 
 .mainside {
   display: grid;
-  grid-row: 2 / 3;
+  padding-top: 0px;
+  grid-row: 1 / 3;
+  padding-top: 50px;
+  grid-template-rows: repeat(auto-fit, 1fr);
 }
 
 .announcements,
 .trending {
   display: grid;
+  width: 100%;
+}
+
+.annheader p {
+  font-weight: 800;
+}
+.trendingheader p {
+  font-weight: 800;
+  margin-right: 325px;
 }
 
 .trendingcard,
 .anncard {
   display: grid;
+  width: 75%;
   width: 1fr;
   background-color: white;
   border-radius: 10px;
   margin: 25px;
+  padding: 25px;
+  grid-template-rows: repeat(auto-fit, 1fr);
+  box-shadow: 0px 5px 5px rgb(161, 161, 161);
 }
+
+.annheader,
+.trendingheader {
+  font-weight: 800;
+  grid-column: 1 / 3;
+  margin-left: 25px;
+  display: grid;
+  width: 100%;
+  justify-items: left;
+}
+
+.anncard p,
+.anncard h3 {
+  margin: 15px;
+}
+
 button {
   color: white;
   font-size: large;
@@ -217,4 +250,22 @@ li:hover {
   align-items: flex-end;
   gap: 15px;
   padding: 15px;
+}
+
+.trendinfo {
+  display: grid;
+  justify-items: left;
+  align-items: center;
+  grid-template-columns: 1fr 5fr;
+}
+
+.trendinfo h4,
+.trendinfo p {
+  grid-column: 2 / 3;
+  margin-left: 10px;
+}
+
+.trendinfo p {
+  margin-top: -15px;
+  color: rgb(109, 109, 109);
 }
